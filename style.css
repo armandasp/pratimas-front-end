@@ -1,0 +1,99 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+nav {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+nav a {
+  font-weight: bold;
+  margin-right: 5em;
+  text-decoration: none;
+}
+footer {
+  text-align: center;
+  background: #eee;
+  padding: 3rem;
+}
+main {
+  background: #eee;
+}
+.wrapper {
+  width: 85%;
+  margin: 0 auto;
+}
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left {
+  padding-top: 2rem;
+}
+.left p {
+  font-size: 0.8rem;
+}
+.about a {
+  background: rgb(117, 117, 216);
+  padding: 0.8rem 1.3rem;
+  color: white;
+  font-size: 0.8rem;
+  text-decoration: none;
+  border-radius: 3px;
+  font-weight: bold;
+}
+.about a:hover {
+  background: rgb(74, 74, 214);
+  transition: 0.2s;
+  color: #eee;
+}
+.about a i {
+  margin-right: 1rem;
+}
+#blocks {
+  margin-top: 2rem;
+}
+#allBlocks {
+  display: flex;
+  flex-wrap: wrap;
+}
+#block {
+  background: white;
+  width: calc(33.33% - 1.5rem);
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+#block:nth-child(3n) {
+  margin-right: 0;
+}
+#block #block-top {
+  text-align: center;
+  padding: 2rem;
+}
+
+#block #block-top #price-title p {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 0;
+}
+#delete {
+  padding: 2rem;
+  text-align: right;
+  border-top: 1px solid #eee;
+}
+#delete i {
+  background: #eee;
+  padding: 0.8rem;
+  color: rgb(194, 133, 19);
+  cursor: pointer;
+}
+#delete i:hover {
+  background: rgb(207, 207, 207);
+  color: rgb(196, 154, 76);
+  transition: 0.2s;
+}
+form {
+  background: white;
+}

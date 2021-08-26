@@ -29,7 +29,17 @@ fetch("http://localhost:3000/memberships")
       price.textContent = `$ ${item.price}`;
       title.textContent = item.name;
       description.textContent = item.description;
+      icon.addEventListener("click", () => {
+        const delConfim = confirm("Do you want to delete this item?");
+        if (delConfim) {
+          fetch("http://localhost:3000/memberships/" + item._id, {
+            method: "DELETE",
+          })
+            .then((res) => res.json())
+            .then((data) => {
+              newBlock.remove();
+            });
+        }
+      });
     });
   });
-
-

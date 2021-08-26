@@ -1,7 +1,5 @@
 const allBlocks = document.getElementById("allBlocks");
 
-console.log(allBlocks);
-
 fetch("http://localhost:3000/memberships")
   .then((res) => res.json())
   .then((data) => {
@@ -26,9 +24,12 @@ fetch("http://localhost:3000/memberships")
       priceTitle.append(price, " ", title);
       const icon = document.createElement("i");
       icon.setAttribute("class", "fas fa-trash");
+      icon.setAttribute("id", "icon");
       deleteButton.append(icon);
       price.textContent = `$ ${item.price}`;
       title.textContent = item.name;
       description.textContent = item.description;
     });
   });
+
+

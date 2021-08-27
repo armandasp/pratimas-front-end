@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Memberships</a>
+        <a href="users.html">Users</a>
+      </nav>
+    </header>
+    <main>
+      <section id="top">
+        <div class="wrapper about">
+          <div class="left">
+            <h2>Create Membership</h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="form">
+        <div class="wrapper">
+          <form name="add" class="add-user">
+            <div class="all-inputs">
+              <div class="input-left">
+                <div class="field">
+                  <legend>First Name <i class="fas fa-asterisk"></i></legend>
+                  <input
+                    type="username"
+                    id="username"
+                    name="username"
+                    placeholder="First Name"
+                    required
+                  />
+                </div>
+                <div class="field">
+                  <legend>Email Address <i class="fas fa-asterisk"></i></legend>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Email Address"
+                    required
+                  />
+                </div>
+                <div class="field">
+                  <legend>Change Membership</legend>
+                  <select name="choose" id="choose">
+                    <option value="Trial">Trial</option>
+                    <option value="Bronze">Bronze</option>
+                    <option value="Silver">Silver</option>
+                    <option value="Gold">Gold</option>
+                    <option value="Platinum">Platinum</option>
+                  </select>
+                </div>
+              </div>
+              <div class="input-right">
+                <div class="field">
+                  <legend>Last Name <i class="fas fa-asterisk"></i></legend>
+                  <input
+                    type="lastname"
+                    id="lastname"
+                    name="lastname"
+                    placeholder="Last Name"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="buttons">
+              <a href="index.html" class="cancel">Cancel</a>
+              <button type="submit" class="button">New User</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer> Copyright &copy; 2021 Membership Manager </footer>
+    <script src="add-user.js"></script>
+  </body>
+</html>

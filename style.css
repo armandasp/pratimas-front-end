@@ -1,5 +1,9 @@
 body {
   font-family: "Open Sans", sans-serif;
+  background: #eee;
+}
+header {
+  background: white;
 }
 nav {
   text-align: center;
@@ -28,10 +32,9 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 1rem;
 }
-.left {
-  padding-top: 2rem;
-}
+
 .left p {
   font-size: 0.8rem;
 }
@@ -144,4 +147,84 @@ form .buttons .cancel {
   text-decoration: none;
   font-weight: bold;
   color: black;
+}
+#top .sort {
+  text-align: center;
+}
+#top .sort p {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+#top .sort i {
+  color: rgb(117, 117, 216);
+  cursor: pointer;
+}
+#top .sort i:hover {
+  font-size: 1.2rem;
+  margin-left: -0.1rem;
+  transition: 0.2s;
+}
+#allBlocks #block p {
+  margin-left: 1em;
+}
+#allBlocks #block #name-surname {
+  margin-bottom: 2.5rem;
+  color: rgb(128, 128, 128);
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+.add-user {
+  padding: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+.add-user .all-inputs {
+  display: flex;
+}
+.add-user .all-inputs .input-left {
+  flex: 1;
+  width: 100%;
+  margin-right: 2rem;
+}
+.add-user .all-inputs .input-right {
+  flex: 1;
+  width: 100%;
+}
+.add-user .all-inputs .input-left .field,
+.add-user .all-inputs .input-right .field {
+  display: block;
+}
+.add-user .all-inputs .input-left .field input,
+.add-user .all-inputs .input-right .field input {
+  margin-left: 0;
+  width: 100%;
+}
+.add-user .all-inputs .input-left .field legend,
+.add-user .all-inputs .input-right .field legend {
+  text-align: left;
+  width: 100%;
+  font-size: 1rem;
+  padding: 0;
+}
+select {
+  width: 50%;
+  margin-bottom: 1rem;
+  margin-left: 1.5rem;
+  border: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  box-sizing: border-box;
+}
+
+.add-user .all-inputs .input-left .field legend i,
+.add-user .all-inputs .input-right .field legend i {
+  font-size: 0.5rem;
+  color: rgb(194, 133, 19);
+  line-height: 1rem;
+}
+
+.add-user .buttons {
+  text-align: center;
 }

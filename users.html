@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Memberships</a>
+        <a href="users.html">Users</a>
+      </nav>
+    </header>
+    <main>
+      <section id="top">
+        <div class="wrapper about">
+          <div class="left">
+            <h2>User Management</h2>
+          </div>
+          <a href="add-user.html" class="button"
+            ><i class="fas fa-plus"></i> New User</a
+          >
+        </div>
+        <div class="sort">
+          <p id="sortText">Sorting By Name: Asc</p>
+          <i class="fas fa-sort" id="btn"></i>
+        </div>
+      </section>
+      <section id="blocks">
+        <div class="wrapper blocks" id="allBlocks"> </div>
+      </section>
+    </main>
+    <footer> Copyright &copy; 2021 Membership Manager </footer>
+    <script src="users.js"></script>
+  </body>
+</html>
